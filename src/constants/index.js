@@ -1,31 +1,19 @@
 const navLinks = [
-  {
-    name: "Work",
-    link: "#work",
-  },
-  {
-    name: "Experience",
-    link: "#experience",
-  },
-  {
-    name: "Skills",
-    link: "#skills",
-  },
-  {
-    name: "Testimonials",
-    link: "#testimonials",
-  },
+  { name: "Work", link: "#work" },
+  { name: "Experience", link: "#experience" },
+  { name: "Skills", link: "#skills" },
+  { name: "Testimonials", link: "#testimonials" },
 ];
 
 const words = [
-  { text: "Innovator", imgPath: "/SatyamPortfolio/images/ideas.svg" },
-  { text: "Engineer", imgPath: "/SatyamPortfolio/images/concepts.svg" },
-  { text: "Speaker", imgPath: "/SatyamPortfolio/images/designs.svg" },
-  { text: "Developer", imgPath: "/SatyamPortfolio/images/code.svg" },
-  { text: "Innovator", imgPath: "/SatyamPortfolio/images/ideas.svg" },
-  { text: "Engineer", imgPath: "/SatyamPortfolio/images/concepts.svg" },
-  { text: "Speaker", imgPath: "/SatyamPortfolio/images/designs.svg" },
-  { text: "Developer", imgPath: "/SatyamPortfolio/images/code.svg" },
+  { text: "Innovator", imgPath: `${import.meta.env.BASE_URL}images/ideas.svg` },
+  { text: "Engineer", imgPath: `${import.meta.env.BASE_URL}images/concepts.svg` },
+  { text: "Speaker", imgPath: `${import.meta.env.BASE_URL}images/designs.svg` },
+  { text: "Developer", imgPath: `${import.meta.env.BASE_URL}images/code.svg` },
+  { text: "Innovator", imgPath: `${import.meta.env.BASE_URL}images/ideas.svg` },
+  { text: "Engineer", imgPath: `${import.meta.env.BASE_URL}images/concepts.svg` },
+  { text: "Speaker", imgPath: `${import.meta.env.BASE_URL}images/designs.svg` },
+  { text: "Developer", imgPath: `${import.meta.env.BASE_URL}images/code.svg` },
 ];
 
 const counterItems = [
@@ -35,111 +23,79 @@ const counterItems = [
   { value: 3, suffix: "", label: "Keynote Appearances" },
 ];
 
-const logoIconsList = [
-  {
-    imgPath: "/SatyamPortfolio/images/logos/company-logo-1.png",
-  },
-  {
-    imgPath: "/SatyamPortfolio/images/logos/company-logo-2.png",
-  },
-  {
-    imgPath: "/SatyamPortfolio/images/logos/company-logo-3.png",
-  },
-  {
-    imgPath: "/SatyamPortfolio/images/logos/company-logo-4.png",
-  },
-  {
-    imgPath: "/SatyamPortfolio/images/logos/company-logo-5.png",
-  },
-  {
-    imgPath: "/SatyamPortfolio/images/logos/company-logo-6.png",
-  },
-  {
-    imgPath: "/SatyamPortfolio/images/logos/company-logo-7.png",
-  },
-  {
-    imgPath: "/SatyamPortfolio/images/logos/company-logo-8.png",
-  },
-  {
-    imgPath: "/SatyamPortfolio/images/logos/company-logo-9.png",
-  },
-  {
-    imgPath: "/SatyamPortfolio/images/logos/company-logo-10.png",
-  },
-  {
-    imgPath: "/SatyamPortfolio/images/logos/company-logo-11.png",
-  },
-];
+const logoIconsList = Array.from({ length: 11 }, (_, i) => ({
+  imgPath: `${import.meta.env.BASE_URL}images/logos/company-logo-${i + 1}.png`,
+}));
 
 const abilities = [
   {
-    imgPath: "/SatyamPortfolio/images/seo.png",
+    imgPath: `${import.meta.env.BASE_URL}images/seo.png`,
     title: "Precision & Quality",
-    desc: "Every project I take on is treated with engineering precision. From writing scalable code to ensuring pixel-perfect UI, I deliver high-quality solutions that not only work but delight users.",
+    desc: "Every project I take on is treated with engineering precision...",
   },
   {
-    imgPath: "/SatyamPortfolio/images/chat.png",
+    imgPath: `${import.meta.env.BASE_URL}images/chat.png`,
     title: "Clear, Consistent Communication",
-    desc: "Whether we’re sprint planning or iterating on feedback, I keep you in the loop. Expect timely updates, transparent progress, and a collaborative workflow that aligns with your vision.",
+    desc: "Whether we’re sprint planning or iterating on feedback...",
   },
   {
-    imgPath: "/SatyamPortfolio/images/time.png",
+    imgPath: `${import.meta.env.BASE_URL}images/time.png`,
     title: "On-Time Delivery",
-    desc: "Having led multiple time-sensitive projects—from machine learning models to live event apps—I understand the value of your time. I ensure on-schedule delivery without compromising quality.",
+    desc: "Having led multiple time-sensitive projects...",
   },
 ];
 
 const techStackImgs = [
   {
     name: "React Developer",
-    imgPath: "/SatyamPortfolio/images/logos/react.png",
+    imgPath: `${import.meta.env.BASE_URL}images/logos/react.png`,
   },
   {
     name: "Python Developer",
-    imgPath: "/SatyamPortfolio/images/logos/python.svg",
+    imgPath: `${import.meta.env.BASE_URL}images/logos/python.svg`,
   },
   {
     name: "Backend Developer",
-    imgPath: "/SatyamPortfolio/images/logos/node.png",
+    imgPath: `${import.meta.env.BASE_URL}images/logos/node.png`,
   },
   {
     name: "Interactive Developer",
-    imgPath: "/SatyamPortfolio/images/logos/three.png",
+    imgPath: `${import.meta.env.BASE_URL}images/logos/three.png`,
   },
   {
     name: "Project Manager",
-    imgPath: "/SatyamPortfolio/images/logos/git.svg",
+    imgPath: `${import.meta.env.BASE_URL}images/logos/git.svg`,
   },
 ];
 
 const techStackIcons = [
   {
     name: "React Developer",
-    modelPath: "/SatyamPortfolio/models/react_logo-transformed.glb",
+    modelPath: `${import.meta.env.BASE_URL}models/react_logo-transformed.glb`,
     scale: 1,
     rotation: [0, 0, 0],
   },
   {
     name: "Python Developer",
-    modelPath: "/SatyamPortfolio/models/python-transformed.glb",
+    modelPath: `${import.meta.env.BASE_URL}models/python-transformed.glb`,
     scale: 0.8,
     rotation: [0, 0, 0],
   },
   {
     name: "Backend Developer",
-    modelPath: "/SatyamPortfolio/models/node-transformed.glb",
+    modelPath: `${import.meta.env.BASE_URL}models/node-transformed.glb`,
     scale: 5,
     rotation: [0, -Math.PI / 2, 0],
   },
   {
     name: "Interactive Developer",
-    modelPath: "/SatyamPortfolio/models/three.js-transformed.glb",
+    modelPath: `${import.meta.env.BASE_URL}models/three.js-transformed.glb`,
     scale: 0.05,
     rotation: [0, 0, 0],
   },
   {
     name: "Project Manager",
-    modelPath: "/SatyamPortfolio/models/git-svg-transformed.glb",
+    modelPath: `${import.meta.env.BASE_URL}models/git-svg-transformed.glb`,
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
   },
@@ -147,39 +103,39 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Satyam brought precision and structure to our QA workflows. His testing automation significantly improved our product reliability and ensured quicker release cycles.",
-    imgPath: "/SatyamPortfolio/images/exp1.png",
-    logoPath: "/SatyamPortfolio/images/logo1.png",
+    review: "Satyam brought precision and structure...",
+    imgPath: `${import.meta.env.BASE_URL}images/exp1.png`,
+    logoPath: `${import.meta.env.BASE_URL}images/logo1.png`,
     title: "Software Test Engineer",
     date: "November 2024 - December 2024",
     responsibilities: [
-      "Designed and executed automated and manual test cases using Selenium, Postman, and JIRA across regression, functional, and integration suites.",
-      "Conducted complete bug lifecycle management, identifying and resolving UI inconsistencies, memory leaks, and API failures.",
-      "Built modular test environments, boosting overall test coverage and execution efficiency.",
+      "Designed and executed automated and manual test cases...",
+      "Conducted complete bug lifecycle management...",
+      "Built modular test environments...",
     ],
   },
   {
-    review: "Satyam's data-driven environmental tech initiatives showcased his leadership, technical expertise, and ability to integrate scalable software practices into impact-focused domains.",
-    imgPath: "/SatyamPortfolio/images/exp2.png",
-    logoPath: "/SatyamPortfolio/images/logo2.png",
+    review: "Satyam's data-driven environmental tech initiatives...",
+    imgPath: `${import.meta.env.BASE_URL}images/exp2.png`,
+    logoPath: `${import.meta.env.BASE_URL}images/logo2.png`,
     title: "Data Analyst & Project Manager",
     date: "May 2022 - April 2024",
     responsibilities: [
-      "Engineered Python-based analytics pipelines for 5 environmental programs, improving decision-making with actionable data insights.",
-      "Applied Agile methodologies to manage and deliver 3 tech-driven sustainability projects (waste optimization, renewable energy apps, climate literacy portals)",
-      "Used SEO tools and digital platforms to run public engagement campaigns, applying web analytics to optimize reach and adoption.",
+      "Engineered Python-based analytics pipelines...",
+      "Applied Agile methodologies...",
+      "Used SEO tools and digital platforms...",
     ],
   },
   {
-    review: "Satyam’s cross-functional skills in marketing tech and design translated into seamless event platforms and an elevated user experience for the Under 25 Summit.",
-    imgPath: "/SatyamPortfolio/images/exp3.png",
-    logoPath: "/SatyamPortfolio/images/logo3.png",
+    review: "Satyam’s cross-functional skills in marketing tech...",
+    imgPath: `${import.meta.env.BASE_URL}images/exp3.png`,
+    logoPath: `${import.meta.env.BASE_URL}images/logo3.png`,
     title: "Event Marketing & Production Intern",
     date: "February 2023 - March 2023",
     responsibilities: [
-      "Collaborated with tech and design teams to build audience-facing campaign pages using Adobe tools and marketing automation workflows.",
-      "Boosted campaign conversion by 20% via SEO & PPC integrations; applied analytics to refine messaging and improve ROI.",
-      "Managed digital assets and process flows using tools like Trello and Asana to optimize cross-functional event execution.",
+      "Collaborated with tech and design teams...",
+      "Boosted campaign conversion by 20%...",
+      "Managed digital assets and process flows...",
     ],
   },
 ];
@@ -187,15 +143,15 @@ const expCards = [
 const expLogos = [
   {
     name: "logo1",
-    imgPath: "/SatyamPortfolio/images/logo1.png",
+    imgPath: `${import.meta.env.BASE_URL}images/logo1.png`,
   },
   {
     name: "logo2",
-    imgPath: "/SatyamPortfolio/images/logo2.png",
+    imgPath: `${import.meta.env.BASE_URL}images/logo2.png`,
   },
   {
     name: "logo3",
-    imgPath: "/SatyamPortfolio/images/logo3.png",
+    imgPath: `${import.meta.env.BASE_URL}images/logo3.png`,
   },
 ];
 
@@ -203,51 +159,51 @@ const testimonials = [
   {
     name: "Product Manager",
     mentions: "Wyreflow",
-    review: "Satyam quickly grasped our complex testing pipeline and brought structure and clarity to our QA processes. His ability to detect edge-case failures and optimize testing workflows made a huge difference",
+    review: "Satyam quickly grasped our complex testing pipeline...",
   },
   {
     name: "Program Director",
     mentions: "Restless Development",
-    review: "Satyam’s tech-driven approach to climate advocacy is unmatched. From handling complex data analytics to delivering community-based solutions, he led initiatives like a seasoned product owner.",
+    review: "Satyam’s tech-driven approach to climate advocacy...",
   },
   {
     name: "Event Head",
     mentions: "Under 25 Summit 2023",
-    review: "Satyam brought a unique tech-first mindset to event production. His knack for digital storytelling and automation helped scale our marketing efforts like never before",
+    review: "Satyam brought a unique tech-first mindset...",
   },
   {
     name: "Technische TechExpo",
     mentions: "IIT Guwahati",
-    review: "Satyam’s keynote at our TechExpo was both visionary and grounded. His demo of applying tech to solve real-world problems inspired a packed hall of budding engineers and entrepreneurs.",
+    review: "Satyam’s keynote at our TechExpo was both visionary...",
   },
   {
     name: "Program Manager",
     mentions: "Saahas",
-    review: "Satyam transformed our awareness campaign into a tech-enabled experience. His use of visual storytelling and flow design made sustainability education engaging and measurable",
+    review: "Satyam transformed our awareness campaign...",
   },
   {
     name: "UL Innovation Panel Judge",
     mentions: "NSSQ Event",
-    review: "At just 17, Satyam had a room full of professionals on the edge of their seats. His talk on breaking boundaries with technology reminded us why investing in youth innovation matters.",
+    review: "At just 17, Satyam had a room full of professionals...",
   },
 ];
 
 const socialImgs = [
   {
     name: "insta",
-    imgPath: "/SatyamPortfolio/images/insta.png",
+    imgPath: `${import.meta.env.BASE_URL}images/insta.png`,
   },
   {
     name: "fb",
-    imgPath: "/SatyamPortfolio/images/fb.png",
+    imgPath: `${import.meta.env.BASE_URL}images/fb.png`,
   },
   {
     name: "x",
-    imgPath: "/SatyamPortfolio/images/x.png",
+    imgPath: `${import.meta.env.BASE_URL}images/x.png`,
   },
   {
     name: "linkedin",
-    imgPath: "/SatyamPortfolio/images/linkedin.png",
+    imgPath: `${import.meta.env.BASE_URL}images/linkedin.png`,
   },
 ];
 
