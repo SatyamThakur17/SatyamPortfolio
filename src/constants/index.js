@@ -18,14 +18,14 @@ const navLinks = [
 ];
 
 const words = [
-  { text: "Innovator", imgPath: "/SatyamPortfolio/public/images/ideas.svg" },
-  { text: "Engineer", imgPath: "/SatyamPortfolio/public/images/concepts.svg" },
-  { text: "Speaker", imgPath: "/SatyamPortfolio/public/images/designs.svg" },
-  { text: "Developer", imgPath: "/SatyamPortfolio/public/images/code.svg" },
-  { text: "Innovator", imgPath: "/SatyamPortfolio/public/images/ideas.svg" },
-  { text: "Engineer", imgPath: "/SatyamPortfolio/public/images/concepts.svg" },
-  { text: "Speaker", imgPath: "/SatyamPortfolio/public/images/designs.svg" },
-  { text: "Developer", imgPath: "/SatyamPortfolio/public/images/code.svg" },
+  { text: "Innovator", imgPath: "/SatyamPortfolio/images/ideas.svg" },
+  { text: "Engineer", imgPath: "/SatyamPortfolio/images/concepts.svg" },
+  { text: "Speaker", imgPath: "/SatyamPortfolio/images/designs.svg" },
+  { text: "Developer", imgPath: "/SatyamPortfolio/images/code.svg" },
+  { text: "Innovator", imgPath: "/SatyamPortfolio/images/ideas.svg" },
+  { text: "Engineer", imgPath: "/SatyamPortfolio/images/concepts.svg" },
+  { text: "Speaker", imgPath: "/SatyamPortfolio/images/designs.svg" },
+  { text: "Developer", imgPath: "/SatyamPortfolio/images/code.svg" },
 ];
 
 const counterItems = [
@@ -37,53 +37,53 @@ const counterItems = [
 
 const logoIconsList = [
   {
-    imgPath: "/SatyamPortfolio/public/images/logos/company-logo-1.png",
+    imgPath: "/SatyamPortfolio/images/logos/company-logo-1.png",
   },
   {
-    imgPath: "/SatyamPortfolio/public/images/logos/company-logo-2.png",
+    imgPath: "/SatyamPortfolio/images/logos/company-logo-2.png",
   },
   {
-    imgPath: "/SatyamPortfolio/public/images/logos/company-logo-3.png",
+    imgPath: "/SatyamPortfolio/images/logos/company-logo-3.png",
   },
   {
-    imgPath: "/SatyamPortfolio/public/images/logos/company-logo-4.png",
+    imgPath: "/SatyamPortfolio/images/logos/company-logo-4.png",
   },
   {
-    imgPath: "/SatyamPortfolio/public/images/logos/company-logo-5.png",
+    imgPath: "/SatyamPortfolio/images/logos/company-logo-5.png",
   },
   {
-    imgPath: "/SatyamPortfolio/public/images/logos/company-logo-6.png",
+    imgPath: "/SatyamPortfolio/images/logos/company-logo-6.png",
   },
   {
-    imgPath: "/SatyamPortfolio/public/images/logos/company-logo-7.png",
+    imgPath: "/SatyamPortfolio/images/logos/company-logo-7.png",
   },
   {
-    imgPath: "/SatyamPortfolio/public/images/logos/company-logo-8.png",
+    imgPath: "/SatyamPortfolio/images/logos/company-logo-8.png",
   },
   {
-    imgPath: "/SatyamPortfolio/public/images/logos/company-logo-9.png",
+    imgPath: "/SatyamPortfolio/images/logos/company-logo-9.png",
   },
   {
-    imgPath: "/SatyamPortfolio/public/images/logos/company-logo-10.png",
+    imgPath: "/SatyamPortfolio/images/logos/company-logo-10.png",
   },
   {
-    imgPath: "/SatyamPortfolio/public/images/logos/company-logo-11.png",
+    imgPath: "/SatyamPortfolio/images/logos/company-logo-11.png",
   },
 ];
 
 const abilities = [
   {
-    imgPath: "/SatyamPortfolio/public/images/seo.png",
+    imgPath: "/SatyamPortfolio/images/seo.png",
     title: "Precision & Quality",
     desc: "Every project I take on is treated with engineering precision. From writing scalable code to ensuring pixel-perfect UI, I deliver high-quality solutions that not only work but delight users.",
   },
   {
-    imgPath: "/SatyamPortfolio/public/images/chat.png",
+    imgPath: "/SatyamPortfolio/images/chat.png",
     title: "Clear, Consistent Communication",
     desc: "Whether we’re sprint planning or iterating on feedback, I keep you in the loop. Expect timely updates, transparent progress, and a collaborative workflow that aligns with your vision.",
   },
   {
-    imgPath: "/SatyamPortfolio/public/images/time.png",
+    imgPath: "/SatyamPortfolio/images/time.png",
     title: "On-Time Delivery",
     desc: "Having led multiple time-sensitive projects—from machine learning models to live event apps—I understand the value of your time. I ensure on-schedule delivery without compromising quality.",
   },
@@ -92,54 +92,54 @@ const abilities = [
 const techStackImgs = [
   {
     name: "React Developer",
-    imgPath: "/images/logos/react.png",
+    imgPath: "/SatyamPortfolio/images/logos/react.png",
   },
   {
     name: "Python Developer",
-    imgPath: "/SatyamPortfolio/public/images/logos/python.svg",
+    imgPath: "/SatyamPortfolio/images/logos/python.svg",
   },
   {
     name: "Backend Developer",
-    imgPath: "/SatyamPortfolio/public/images/logos/node.png",
+    imgPath: "/SatyamPortfolio/images/logos/node.png",
   },
   {
     name: "Interactive Developer",
-    imgPath: "/SatyamPortfolio/public/images/logos/three.png",
+    imgPath: "/SatyamPortfolio/images/logos/three.png",
   },
   {
     name: "Project Manager",
-    imgPath: "/SatyamPortfolio/public/images/logos/git.svg",
+    imgPath: "/SatyamPortfolio/images/logos/git.svg",
   },
 ];
 
 const techStackIcons = [
   {
     name: "React Developer",
-    modelPath: "/SatyamPortfolio/public/models/react_logo-transformed.glb",
+    modelPath: "/SatyamPortfolio/models/react_logo-transformed.glb",
     scale: 1,
     rotation: [0, 0, 0],
   },
   {
     name: "Python Developer",
-    modelPath: "/SatyamPortfolio/public/models/python-transformed.glb",
+    modelPath: "/SatyamPortfolio/models/python-transformed.glb",
     scale: 0.8,
     rotation: [0, 0, 0],
   },
   {
     name: "Backend Developer",
-    modelPath: "/SatyamPortfolio/public/models/node-transformed.glb",
+    modelPath: "/SatyamPortfolio/models/node-transformed.glb",
     scale: 5,
     rotation: [0, -Math.PI / 2, 0],
   },
   {
     name: "Interactive Developer",
-    modelPath: "/SatyamPortfolio/public/models/three.js-transformed.glb",
+    modelPath: "/SatyamPortfolio/models/three.js-transformed.glb",
     scale: 0.05,
     rotation: [0, 0, 0],
   },
   {
     name: "Project Manager",
-    modelPath: "/SatyamPortfolio/public/models/git-svg-transformed.glb",
+    modelPath: "/SatyamPortfolio/models/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
   },
@@ -148,8 +148,8 @@ const techStackIcons = [
 const expCards = [
   {
     review: "Satyam brought precision and structure to our QA workflows. His testing automation significantly improved our product reliability and ensured quicker release cycles.",
-    imgPath: "/SatyamPortfolio/public/images/exp1.png",
-    logoPath: "/SatyamPortfolio/public/images/logo1.png",
+    imgPath: "/SatyamPortfolio/images/exp1.png",
+    logoPath: "/SatyamPortfolio/images/logo1.png",
     title: "Software Test Engineer",
     date: "November 2024 - December 2024",
     responsibilities: [
@@ -160,8 +160,8 @@ const expCards = [
   },
   {
     review: "Satyam's data-driven environmental tech initiatives showcased his leadership, technical expertise, and ability to integrate scalable software practices into impact-focused domains.",
-    imgPath: "/SatyamPortfolio/public/images/exp2.png",
-    logoPath: "/SatyamPortfolio/public/images/logo2.png",
+    imgPath: "/SatyamPortfolio/images/exp2.png",
+    logoPath: "/SatyamPortfolio/images/logo2.png",
     title: "Data Analyst & Project Manager",
     date: "May 2022 - April 2024",
     responsibilities: [
@@ -172,8 +172,8 @@ const expCards = [
   },
   {
     review: "Satyam’s cross-functional skills in marketing tech and design translated into seamless event platforms and an elevated user experience for the Under 25 Summit.",
-    imgPath: "/SatyamPortfolio/public/images/exp3.png",
-    logoPath: "/SatyamPortfolio/public/images/logo3.png",
+    imgPath: "/SatyamPortfolio/images/exp3.png",
+    logoPath: "/SatyamPortfolio/images/logo3.png",
     title: "Event Marketing & Production Intern",
     date: "February 2023 - March 2023",
     responsibilities: [
@@ -187,15 +187,15 @@ const expCards = [
 const expLogos = [
   {
     name: "logo1",
-    imgPath: "/SatyamPortfolio/public/images/logo1.png",
+    imgPath: "/SatyamPortfolio/images/logo1.png",
   },
   {
     name: "logo2",
-    imgPath: "/SatyamPortfolio/public/images/logo2.png",
+    imgPath: "/SatyamPortfolio/images/logo2.png",
   },
   {
     name: "logo3",
-    imgPath: "/SatyamPortfolio/public/images/logo3.png",
+    imgPath: "/SatyamPortfolio/images/logo3.png",
   },
 ];
 
@@ -235,19 +235,19 @@ const testimonials = [
 const socialImgs = [
   {
     name: "insta",
-    imgPath: "/SatyamPortfolio/public/images/insta.png",
+    imgPath: "/SatyamPortfolio/images/insta.png",
   },
   {
     name: "fb",
-    imgPath: "/SatyamPortfolio/public/images/fb.png",
+    imgPath: "/SatyamPortfolio/images/fb.png",
   },
   {
     name: "x",
-    imgPath: "/SatyamPortfolio/public/images/x.png",
+    imgPath: "/SatyamPortfolio/images/x.png",
   },
   {
     name: "linkedin",
-    imgPath: "/SatyamPortfolio/public/images/linkedin.png",
+    imgPath: "/SatyamPortfolio/images/linkedin.png",
   },
 ];
 
