@@ -18,7 +18,10 @@ const Hero = () => {
   return (
     <section id="hero" className="relative overflow-hidden">
       <div className="absolute top-0 left-0 z-10">
-        <img src="/images/bg.png" alt="" />
+        <img
+          src={`${import.meta.env.BASE_URL}images/bg.png`}
+          alt="background"
+        />
       </div>
 
       <div className="hero-layout">
@@ -37,8 +40,8 @@ const Hero = () => {
                         className="flex items-center md:gap-3 gap-1 pb-2"
                       >
                         <img
-                          src={word.imgPath}
-                          alt="person"
+                          src={`${import.meta.env.BASE_URL}${word.imgPath.replace(/^\/SatyamPortfolio\//, '')}`}
+                          alt={word.text}
                           className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50"
                         />
                         <span>{word.text}</span>
