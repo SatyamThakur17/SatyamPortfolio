@@ -27,7 +27,7 @@ const TechStack = () => {
     );
   });
 
-  // Ensure correct model path is used
+  // Standardize model paths relative to base
   const getCorrectModelPath = (path) =>
     `${import.meta.env.BASE_URL}${path.replace(/^\/SatyamPortfolio\//, "")}`;
 
@@ -60,27 +60,6 @@ const TechStack = () => {
               </div>
             </div>
           ))}
-
-          {/* Uncomment below if you want to use image-based fallback instead of 3D models */}
-          {/* {techStackImgs.map((techStackIcon, index) => (
-            <div
-              key={index}
-              className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg"
-            >
-              <div className="tech-card-animated-bg" />
-              <div className="tech-card-content">
-                <div className="tech-icon-wrapper">
-                  <img
-                    src={`${import.meta.env.BASE_URL}${techStackIcon.imgPath.replace(/^\/SatyamPortfolio\//, "")}`}
-                    alt={techStackIcon.name}
-                  />
-                </div>
-                <div className="padding-x w-full">
-                  <p>{techStackIcon.name}</p>
-                </div>
-              </div>
-            </div>
-          ))} */}
         </div>
       </div>
     </div>
