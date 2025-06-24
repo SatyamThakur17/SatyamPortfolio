@@ -88,3 +88,5 @@ const AppShowcase = () => {
     </div>
   );
 };
+
+export default ShowcaseSection;
