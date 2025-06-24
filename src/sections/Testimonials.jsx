@@ -3,6 +3,10 @@ import TitleHeader from "../components/TitleHeader";
 import GlowCard from "../components/GlowCard";
 
 const Testimonials = () => {
+  // Helper to get base-aware image path
+  const getImgPath = (path) =>
+    `${import.meta.env.BASE_URL}${path.replace(/^\/SatyamPortfolio\//, "")}`;
+
   return (
     <section id="testimonials" className="flex-center section-padding">
       <div className="w-full h-full md:px-10 px-5">
@@ -16,7 +20,13 @@ const Testimonials = () => {
             <GlowCard card={testimonial} key={index} index={index}>
               <div className="flex items-center gap-3">
                 <div>
-                  <img src={testimonial.imgPath} alt="" />
+                  {testimonial.imgPath && (
+                    <img
+                      src={getImgPath(testimonial.imgPath)}
+                      alt={testimonial.name}
+                      className="w-10 h-10 object-contain"
+                    />
+                  )}
                 </div>
                 <div>
                   <p className="font-bold">{testimonial.name}</p>
