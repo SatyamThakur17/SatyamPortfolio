@@ -10,8 +10,8 @@ import { BlendFunction } from "postprocessing";
 import * as THREE from "three";
 
 export function Room(props) {
-  const modelPath = "/SatyamPortfolio/models/optimized-room.glb";
-  const texturePath = "/SatyamPortfolio/images/textures/mat1.png";
+  const modelPath = `${import.meta.env.BASE_URL}models/optimized-room.glb`;
+  const texturePath = `${import.meta.env.BASE_URL}images/textures/mat1.png`;
 
   const { nodes, materials } = useGLTF(modelPath);
   const screensRef = useRef();

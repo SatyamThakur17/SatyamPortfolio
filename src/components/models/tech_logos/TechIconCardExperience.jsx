@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import * as THREE from "three";
 
 const TechIconCardExperience = ({ model }) => {
-  const scene = useGLTF(model.modelPath);
+  const scene = useGLTF(`${import.meta.env.BASE_URL}${model.modelPath}`);
 
   useEffect(() => {
     if (model.name === "Interactive Developer") {
