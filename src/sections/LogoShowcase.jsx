@@ -3,7 +3,10 @@ import { logoIconsList } from "../constants";
 const LogoIcon = ({ icon }) => {
   return (
     <div className="flex-none flex-center marquee-item">
-      <img src={icon.imgPath} alt={icon.name} />
+      <img
+        src={`${import.meta.env.BASE_URL}${icon.imgPath.replace(/^\/SatyamPortfolio\//, '')}`}
+        alt={icon.name}
+      />
     </div>
   );
 };
