@@ -5,18 +5,14 @@ import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const ShowcaseSection = () => {
+const AppShowcase = () => {
   const sectionRef = useRef(null);
   const rydeRef = useRef(null);
   const libraryRef = useRef(null);
   const ycDirectoryRef = useRef(null);
 
   useGSAP(() => {
-    gsap.fromTo(
-      sectionRef.current,
-      { opacity: 0 },
-      { opacity: 1, duration: 1.5 }
-    );
+    gsap.fromTo(sectionRef.current, { opacity: 0 }, { opacity: 1, duration: 1.5 });
 
     const cards = [rydeRef.current, libraryRef.current, ycDirectoryRef.current];
 
@@ -46,18 +42,17 @@ const ShowcaseSection = () => {
             <div className="image-wrapper">
               <img
                 src={`${import.meta.env.BASE_URL}images/project1.png`}
-                alt="Dyslexicans"
+                alt="Ryde App Interface"
               />
             </div>
             <div className="text-content">
               <h2>
-                Dyslexicans: Early detection of SLDs using Machine learning
+                On-Demand Rides Made Simple with a Powerful, User-Friendly App
+                called Ryde
               </h2>
               <p className="text-white-50 md:text-xl">
-                ML-oriented screening tool that identifies learning disabilities like dyslexia
-                and dysgraphia through cognitive and behavioral data analysis.
-                With a user-friendly interface and personalized insights, it enables early
-                detection, tailored interventions, and fosters inclusive education.
+                An app built with React Native, Expo, & TailwindCSS for a fast,
+                user-friendly experience.
               </p>
             </div>
           </div>
@@ -70,17 +65,17 @@ const ShowcaseSection = () => {
                   alt="Library Management Platform"
                 />
               </div>
-              <h2>Detection of Quasars using ML</h2>
+              <h2>The Library Management Platform</h2>
             </div>
 
             <div className="project" ref={ycDirectoryRef}>
               <div className="image-wrapper bg-[#FFE7EB]">
                 <img
                   src={`${import.meta.env.BASE_URL}images/project3.png`}
-                  alt="DBMS project"
+                  alt="YC Directory App"
                 />
               </div>
-              <h2>Hostel Management System: A DBMS Project</h2>
+              <h2>YC Directory - A Startup Showcase App</h2>
             </div>
           </div>
         </div>
@@ -89,4 +84,4 @@ const ShowcaseSection = () => {
   );
 };
 
-export default ShowcaseSection;
+export default AppShowcase;
