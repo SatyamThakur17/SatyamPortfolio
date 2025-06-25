@@ -77,7 +77,7 @@ const ShowcaseSection = () => {
               <div className="image-wrapper bg-[#FFE7EB]">
                 <img
                   src={`${import.meta.env.BASE_URL}images/project3.png`}
-                  alt="YC Directory App"
+                  alt="DBMS project"
                 />
               </div>
               <h2>Hostel Management System: A DBMS Project</h2>
