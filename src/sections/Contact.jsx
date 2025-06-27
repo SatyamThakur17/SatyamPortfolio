@@ -101,7 +101,7 @@ const Contact = () => {
                     </p>
                     <div className="arrow-wrapper">
                       <img
-                        src={`${import.meta.env.BASE_URL}images/arrow-down.svg`}
+                        src={"images/arrow-down.svg"}
                         alt="arrow"
                       />
                     </div>
