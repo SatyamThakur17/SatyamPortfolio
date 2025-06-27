@@ -1,3 +1,5 @@
+const base = "/SatyamPortfolio";
+
 const navLinks = [
   { name: "Work", link: "#work" },
   { name: "Experience", link: "#experience" },
@@ -6,14 +8,14 @@ const navLinks = [
 ];
 
 const words = [
-  { text: "Innovator", imgPath: new URL('./images/ideas.svg', import.meta.url).href },
-  { text: "Engineer", imgPath: new URL('./images/concepts.svg', import.meta.url).href },
-  { text: "Speaker", imgPath: new URL('./images/designs.svg', import.meta.url).href },
-  { text: "Developer", imgPath: new URL('./images/code.svg', import.meta.url).href },
-  { text: "Innovator", imgPath: new URL('./images/ideas.svg', import.meta.url).href },
-  { text: "Engineer", imgPath: new URL('./images/concepts.svg', import.meta.url).href },
-  { text: "Speaker", imgPath: new URL('./images/designs.svg', import.meta.url).href },
-  { text: "Developer", imgPath: new URL('./images/code.svg', import.meta.url).href },
+  { text: "Innovator", imgPath: `${base}/images/ideas.svg` },
+  { text: "Engineer", imgPath: `${base}/images/concepts.svg` },
+  { text: "Speaker", imgPath: `${base}/images/designs.svg` },
+  { text: "Developer", imgPath: `${base}/images/code.svg` },
+  { text: "Innovator", imgPath: `${base}/images/ideas.svg` },
+  { text: "Engineer", imgPath: `${base}/images/concepts.svg` },
+  { text: "Speaker", imgPath: `${base}/images/designs.svg` },
+  { text: "Developer", imgPath: `${base}/images/code.svg` },
 ];
 
 const counterItems = [
@@ -24,22 +26,22 @@ const counterItems = [
 ];
 
 const logoIconsList = Array.from({ length: 11 }, (_, i) => ({
-  imgPath: new URL(`./images/logos/company-logo-${i + 1}.png`, import.meta.url).href,
+  imgPath: `${base}/images/logos/company-logo-${i + 1}.png`,
 }));
 
 const abilities = [
   {
-    imgPath: new URL('./images/seo.png', import.meta.url).href,
+    imgPath: `${base}/images/seo.png`,
     title: "Precision & Quality",
     desc: "Every project I take on is treated with engineering precision...",
   },
   {
-    imgPath: new URL('./images/chat.png', import.meta.url).href,
+    imgPath: `${base}/images/chat.png`,
     title: "Clear, Consistent Communication",
     desc: "Whether we’re sprint planning or iterating on feedback...",
   },
   {
-    imgPath: new URL('./images/time.png', import.meta.url).href,
+    imgPath: `${base}/images/time.png`,
     title: "On-Time Delivery",
     desc: "Having led multiple time-sensitive projects...",
   },
@@ -48,54 +50,54 @@ const abilities = [
 const techStackImgs = [
   {
     name: "React Developer",
-    imgPath: new URL('./images/logos/react.png', import.meta.url).href,
+    imgPath: `${base}/images/logos/react.png`,
   },
   {
     name: "Python Developer",
-    imgPath: new URL('./images/logos/python.svg', import.meta.url).href,
+    imgPath: `${base}/images/logos/python.svg`,
   },
   {
     name: "Backend Developer",
-    imgPath: new URL('./images/logos/node.png', import.meta.url).href,
+    imgPath: `${base}/images/logos/node.png`,
   },
   {
     name: "Interactive Developer",
-    imgPath: new URL('./images/logos/three.png', import.meta.url).href,
+    imgPath: `${base}/images/logos/three.png`,
   },
   {
     name: "Project Manager",
-    imgPath: new URL('./images/logos/git.svg', import.meta.url).href,
+    imgPath: `${base}/images/logos/git.svg`,
   },
 ];
 
 const techStackIcons = [
   {
     name: "React Developer",
-    modelPath: new URL('./models/react_logo-transformed.glb', import.meta.url).href,
+    modelPath: `${base}/models/react_logo-transformed.glb`,
     scale: 1,
     rotation: [0, 0, 0],
   },
   {
     name: "Python Developer",
-    modelPath: new URL('./models/python-transformed.glb', import.meta.url).href,
+    modelPath: `${base}/models/python-transformed.glb`,
     scale: 0.8,
     rotation: [0, 0, 0],
   },
   {
     name: "Backend Developer",
-    modelPath: new URL('./models/node-transformed.glb', import.meta.url).href,
+    modelPath: `${base}/models/node-transformed.glb`,
     scale: 5,
     rotation: [0, -Math.PI / 2, 0],
   },
   {
     name: "Interactive Developer",
-    modelPath: new URL('./models/three.js-transformed.glb', import.meta.url).href,
+    modelPath: `${base}/models/three.js-transformed.glb`,
     scale: 0.05,
     rotation: [0, 0, 0],
   },
   {
     name: "Project Manager",
-    modelPath: new URL('./models/git-svg-transformed.glb', import.meta.url).href,
+    modelPath: `${base}/models/git-svg-transformed.glb`,
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
   },
@@ -104,8 +106,8 @@ const techStackIcons = [
 const expCards = [
   {
     review: "Satyam brought precision and structure...",
-    imgPath: new URL('./images/exp1.png', import.meta.url).href,
-    logoPath: new URL('./images/logo1.png', import.meta.url).href,
+    imgPath: `${base}/images/exp1.png`,
+    logoPath: `${base}/images/logo1.png`,
     title: "Software Test Engineer",
     date: "November 2024 - December 2024",
     responsibilities: [
@@ -116,8 +118,8 @@ const expCards = [
   },
   {
     review: "Satyam's data-driven environmental tech initiatives...",
-    imgPath: new URL('./images/exp2.png', import.meta.url).href,
-    logoPath: new URL('./images/logo2.png', import.meta.url).href,
+    imgPath: `${base}/images/exp2.png`,
+    logoPath: `${base}/images/logo2.png`,
     title: "Data Analyst & Project Manager",
     date: "May 2022 - April 2024",
     responsibilities: [
@@ -128,8 +130,8 @@ const expCards = [
   },
   {
     review: "Satyam’s cross-functional skills in marketing tech...",
-    imgPath: new URL('./images/exp3.png', import.meta.url).href,
-    logoPath: new URL('./images/logo3.png', import.meta.url).href,
+    imgPath: `${base}/images/exp3.png`,
+    logoPath: `${base}/images/logo3.png`,
     title: "Event Marketing & Production Intern",
     date: "February 2023 - March 2023",
     responsibilities: [
@@ -143,15 +145,15 @@ const expCards = [
 const expLogos = [
   {
     name: "logo1",
-    imgPath: new URL('./images/logo1.png', import.meta.url).href,
+    imgPath: `${base}/images/logo1.png`,
   },
   {
     name: "logo2",
-    imgPath: new URL('./images/logo2.png', import.meta.url).href,
+    imgPath: `${base}/images/logo2.png`,
   },
   {
     name: "logo3",
-    imgPath: new URL('./images/logo3.png', import.meta.url).href,
+    imgPath: `${base}/images/logo3.png`,
   },
 ];
 
@@ -191,19 +193,19 @@ const testimonials = [
 const socialImgs = [
   {
     name: "insta",
-    imgPath: new URL('./images/insta.png', import.meta.url).href,
+    imgPath: `${base}/images/insta.png`,
   },
   {
     name: "fb",
-    imgPath: new URL('./images/fb.png', import.meta.url).href,
+    imgPath: `${base}/images/fb.png`,
   },
   {
     name: "x",
-    imgPath: new URL('./images/x.png', import.meta.url).href,
+    imgPath: `${base}/images/x.png`,
   },
   {
     name: "linkedin",
-    imgPath: new URL('./images/linkedin.png', import.meta.url).href,
+    imgPath: `${base}/images/linkedin.png`,
   },
 ];
 
