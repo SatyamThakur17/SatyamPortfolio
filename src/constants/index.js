@@ -1,5 +1,3 @@
-const base = "/SatyamPortfolio";
-
 const navLinks = [
   { name: "Work", link: "#work" },
   { name: "Experience", link: "#experience" },
@@ -8,14 +6,14 @@ const navLinks = [
 ];
 
 const words = [
-  { text: "Innovator", imgPath: `${base}/images/ideas.svg` },
-  { text: "Engineer", imgPath: `${base}/images/concepts.svg` },
-  { text: "Speaker", imgPath: `${base}/images/designs.svg` },
-  { text: "Developer", imgPath: `${base}/images/code.svg` },
-  { text: "Innovator", imgPath: `${base}/images/ideas.svg` },
-  { text: "Engineer", imgPath: `${base}/images/concepts.svg` },
-  { text: "Speaker", imgPath: `${base}/images/designs.svg` },
-  { text: "Developer", imgPath: `${base}/images/code.svg` },
+  { text: "Innovator", imgPath: "/SatyamPortfolio/images/ideas.svg" },
+  { text: "Engineer", imgPath: "/SatyamPortfolio/images/concepts.svg" },
+  { text: "Speaker", imgPath: "/SatyamPortfolio/images/designs.svg" },
+  { text: "Developer", imgPath: "/SatyamPortfolio/images/code.svg" },
+  { text: "Innovator", imgPath: "/SatyamPortfolio/images/ideas.svg" },
+  { text: "Engineer", imgPath: "/SatyamPortfolio/images/concepts.svg" },
+  { text: "Speaker", imgPath: "/SatyamPortfolio/images/designs.svg" },
+  { text: "Developer", imgPath: "/SatyamPortfolio/images/code.svg" },
 ];
 
 const counterItems = [
@@ -26,78 +24,63 @@ const counterItems = [
 ];
 
 const logoIconsList = Array.from({ length: 11 }, (_, i) => ({
-  imgPath: `${base}/images/logos/company-logo-${i + 1}.png`,
+  imgPath: `/SatyamPortfolio/images/logos/company-logo-${i + 1}.png`,
 }));
 
 const abilities = [
   {
-    imgPath: `${base}/images/seo.png`,
+    imgPath: "/SatyamPortfolio/images/seo.png",
     title: "Precision & Quality",
     desc: "Every project I take on is treated with engineering precision...",
   },
   {
-    imgPath: `${base}/images/chat.png`,
+    imgPath: "/SatyamPortfolio/images/chat.png",
     title: "Clear, Consistent Communication",
     desc: "Whether we’re sprint planning or iterating on feedback...",
   },
   {
-    imgPath: `${base}/images/time.png`,
+    imgPath: "/SatyamPortfolio/images/time.png",
     title: "On-Time Delivery",
     desc: "Having led multiple time-sensitive projects...",
   },
 ];
 
 const techStackImgs = [
-  {
-    name: "React Developer",
-    imgPath: `${base}/images/logos/react.png`,
-  },
-  {
-    name: "Python Developer",
-    imgPath: `${base}/images/logos/python.svg`,
-  },
-  {
-    name: "Backend Developer",
-    imgPath: `${base}/images/logos/node.png`,
-  },
-  {
-    name: "Interactive Developer",
-    imgPath: `${base}/images/logos/three.png`,
-  },
-  {
-    name: "Project Manager",
-    imgPath: `${base}/images/logos/git.svg`,
-  },
+  { name: "React Developer", imgPath: "/SatyamPortfolio/images/logos/react.png" },
+  { name: "Python Developer", imgPath: "/SatyamPortfolio/images/logos/python.svg" },
+  { name: "Backend Developer", imgPath: "/SatyamPortfolio/images/logos/node.png" },
+  { name: "Interactive Developer", imgPath: "/SatyamPortfolio/images/logos/three.png" },
+  { name: "Project Manager", imgPath: "/SatyamPortfolio/images/logos/git.svg" },
 ];
 
 const techStackIcons = [
   {
     name: "React Developer",
-    modelPath: `${base}/models/react_logo-transformed.glb`,
+    modelPath: "/SatyamPortfolio/models/react_logo-transformed.glb",
     scale: 1,
     rotation: [0, 0, 0],
   },
   {
     name: "Python Developer",
-    modelPath: `${base}/models/python-transformed.glb`,
+    modelPath: "/SatyamPortfolio/models/python-transformed.glb",
     scale: 0.8,
     rotation: [0, 0, 0],
   },
   {
     name: "Backend Developer",
-    modelPath: `${base}/models/node-transformed.glb`,
+    modelPath: "/SatyamPortfolio/models/node-transformed.glb",
     scale: 5,
     rotation: [0, -Math.PI / 2, 0],
   },
   {
     name: "Interactive Developer",
-    modelPath: `${base}/models/three.js-transformed.glb`,
+    modelPath: "/SatyamPortfolio/models/three.js-transformed.glb",
     scale: 0.05,
     rotation: [0, 0, 0],
   },
   {
     name: "Project Manager",
-    modelPath: `${base}/models/git-svg-transformed.glb`,
+    modelPath: "/SatyamPortfolio/models/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
   },
@@ -106,8 +89,8 @@ const techStackIcons = [
 const expCards = [
   {
     review: "Satyam brought precision and structure...",
-    imgPath: `${base}/images/exp1.png`,
-    logoPath: `${base}/images/logo1.png`,
+    imgPath: "/SatyamPortfolio/images/exp1.png",
+    logoPath: "/SatyamPortfolio/images/logo1.png",
     title: "Software Test Engineer",
     date: "November 2024 - December 2024",
     responsibilities: [
@@ -118,8 +101,8 @@ const expCards = [
   },
   {
     review: "Satyam's data-driven environmental tech initiatives...",
-    imgPath: `${base}/images/exp2.png`,
-    logoPath: `${base}/images/logo2.png`,
+    imgPath: "/SatyamPortfolio/images/exp2.png",
+    logoPath: "/SatyamPortfolio/images/logo2.png",
     title: "Data Analyst & Project Manager",
     date: "May 2022 - April 2024",
     responsibilities: [
@@ -130,8 +113,8 @@ const expCards = [
   },
   {
     review: "Satyam’s cross-functional skills in marketing tech...",
-    imgPath: `${base}/images/exp3.png`,
-    logoPath: `${base}/images/logo3.png`,
+    imgPath: "/SatyamPortfolio/images/exp3.png",
+    logoPath: "/SatyamPortfolio/images/logo3.png",
     title: "Event Marketing & Production Intern",
     date: "February 2023 - March 2023",
     responsibilities: [
@@ -143,18 +126,9 @@ const expCards = [
 ];
 
 const expLogos = [
-  {
-    name: "logo1",
-    imgPath: `${base}/images/logo1.png`,
-  },
-  {
-    name: "logo2",
-    imgPath: `${base}/images/logo2.png`,
-  },
-  {
-    name: "logo3",
-    imgPath: `${base}/images/logo3.png`,
-  },
+  { name: "logo1", imgPath: "/SatyamPortfolio/images/logo1.png" },
+  { name: "logo2", imgPath: "/SatyamPortfolio/images/logo2.png" },
+  { name: "logo3", imgPath: "/SatyamPortfolio/images/logo3.png" },
 ];
 
 const testimonials = [
@@ -191,22 +165,10 @@ const testimonials = [
 ];
 
 const socialImgs = [
-  {
-    name: "insta",
-    imgPath: `${base}/images/insta.png`,
-  },
-  {
-    name: "fb",
-    imgPath: `${base}/images/fb.png`,
-  },
-  {
-    name: "x",
-    imgPath: `${base}/images/x.png`,
-  },
-  {
-    name: "linkedin",
-    imgPath: `${base}/images/linkedin.png`,
-  },
+  { name: "insta", imgPath: "/SatyamPortfolio/images/insta.png" },
+  { name: "fb", imgPath: "/SatyamPortfolio/images/fb.png" },
+  { name: "x", imgPath: "/SatyamPortfolio/images/x.png" },
+  { name: "linkedin", imgPath: "/SatyamPortfolio/images/linkedin.png" },
 ];
 
 export {
