@@ -29,7 +29,7 @@ const TechStack = () => {
 
   // Standardize model paths relative to base
   const getCorrectModelPath = (path) =>
-    `https://satyamthakur17.github.io/SatyamPortfolio/${path.replace(/^\/SatyamPortfolio\//, "")}`;
+    `https://satyamthakur17.github.io`;
 
   return (
     <div id="skills" className="flex-center section-padding">
